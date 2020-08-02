@@ -14,6 +14,7 @@
   },
   "author": "Niklas Lindroos <niklas.lindroos@alumni.aalto.fi>",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.23.12",
     "gatsby-image": "^2.4.9",
     "gatsby-plugin-manifest": "^2.4.14",

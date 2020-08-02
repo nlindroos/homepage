@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `homepage-nl`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -38,3 +38,8 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
