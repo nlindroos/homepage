@@ -18,8 +18,16 @@ const Container = styled.div`
   padding: 0 1.0875rem 1.45rem;
 `
 
+export interface StaticQuery {
+  site: {
+    siteMetadata: {
+      title: string
+    }
+  }
+}
+
 const Layout: React.FunctionComponent = ({ children }) => {
-  const data = useStaticQuery(graphql`
+  const { site } = useStaticQuery<StaticQuery>(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
@@ -31,7 +39,7 @@ const Layout: React.FunctionComponent = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={site.siteMetadata.title} />
       <Container>
         <main>{children}</main>
         <footer>
