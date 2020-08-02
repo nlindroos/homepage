@@ -8,7 +8,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "lint": "eslint . --ext .js,.ts,.tsx --max-warnings=0",
     "tsc": "tsc"
   },
@@ -37,12 +37,17 @@
     "typography-theme-parnassus": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.10.4",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.7",
+    "@types/jest": "^26.0.8",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "@types/react-helmet": "^6.0.0",
     "@types/typography": "^0.16.3",
     "@typescript-eslint/eslint-plugin": "^3.7.1",
     "@typescript-eslint/parser": "^3.7.1",
+    "babel-jest": "^26.2.2",
     "babel-plugin-emotion": "^10.0.33",
     "babel-preset-gatsby": "^0.5.4",
     "eslint": "^7.5.0",
@@ -54,6 +59,8 @@
     "eslint-plugin-react": "^7.20.4",
     "eslint-plugin-react-hooks": "^4.0.8",
     "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.2.2",
     "lint-staged": "^10.2.11",
     "prettier": "2.0.5",
     "typescript": "^3.9.7"

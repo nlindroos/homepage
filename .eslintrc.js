@@ -42,4 +42,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true }],
   },
+  env: {
+    jest: true,
+  },
 }
