@@ -27,8 +27,6 @@ jobs:
         run: npm ci
 
       - name: TypeScript compilation
-        run: npm tsc
+        run: npm run tsc
       - name: ESLint
-        run: npm lint
-      # - name: Testing Library tests
-      #   run: npm test
+        run: npm run lint
